@@ -1,0 +1,79 @@
+/* Reset default padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: rgb(48, 45, 45);
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-bar {
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+  }
+  
+  .search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    font-size: 20px;
+  }
+  
+  .navbar li {
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+  
+  .navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid hsl(0, 86%, 47%);
+  }
+  
+  .navbar button {
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Add hover effect for button only */
+  .navbar button:hover {
+    background-color: hsl(0, 2%, 36%);
+    transform: scale(1.05) translateY(-2px); /* Slight scaling and upward movement */
+  }
+  
+  /* Optional: if you only want the hover effect on this button */
+  button {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
